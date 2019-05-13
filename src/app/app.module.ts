@@ -1,32 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
-
-import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent} from './login/register.component';
-import { NopagefoundComponent } from './nopagefound/nopagefound.component';
-
-
-//rutas
+// Rutas
 import { APP_ROUTES } from './app.routes';
 
+// Modulos
+import { PagesModule } from './pages/pages.module';
 
-//temporal
-import { FormsModule }   from '@angular/forms';
+// temporal
+import { FormsModule } from '@angular/forms';
 
-//modulos
-import { PagesModule } from './pages/pages.modulo';
+// Componentes
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './login/register.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
     RegisterComponent
-       
   ],
   imports: [
     BrowserModule,
